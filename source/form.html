@@ -28,7 +28,7 @@
       <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
 
       <form class="form" action="/echo" method="post">
-        <fieldset class="form__type">
+        <fieldset class="form__radio">
           <legend>Тип</legend>
           <input class="visually-hidden" type="radio" name="supply" id="sinterior" value="Аксессуар для интерьера" checked>
           <label for="interior">Аксессуар для интерьера</label>
@@ -37,7 +37,7 @@
           <label for="toy">Детская игрушка</label>
         </fieldset>
 
-        <fieldset class="form__color">
+        <fieldset class="form__checkbox">
           <legend>Цвет</legend>
           <input  class="visually-hidden" type="checkbox" checked name="plus" id="white">
           <label for="white">Белый</label>
@@ -72,19 +72,19 @@
 
         <fieldset class="form__tel">
           <legend>Тел</legend>
-            <input type="text" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" required>
-            <svg>
-            </svg>
+          <input type="text" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" required>
+          <svg>
+          </svg>
         </fieldset>
 
         <fieldset class="form__email">
           <legend>E-mail</legend>
-            <input type="text" name="email" id="email" placeholder="Ваш Email*"  required>>
-            <svg>
-            </svg>
+          <input type="text" name="email" id="email" placeholder="Ваш Email*" required>
+          <svg>
+          </svg>
         </fieldset>
 
-        <fieldset class="form__comment">
+        <fieldset class="form__textarea">
           <legend>Доп</legend>
           <textarea id="textarea-filed" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
