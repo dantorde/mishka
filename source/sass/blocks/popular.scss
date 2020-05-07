@@ -1,0 +1,37 @@
+.popular__title-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular__table {
+  margin-bottom: 25px;
+}
+
+.popular__table th {
+  padding-right: 30px;
+
+  font-weight: 400;
+  text-align: left;
+}
+
+.popular__table tr {
+  border-bottom: 1px solid $border-light-gray;
+}
+
+.popular__price-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular__price {
+  margin-bottom: 30px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.popular__button-buy {
+  margin: auto;
+}

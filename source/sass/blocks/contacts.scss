@@ -1,0 +1,11 @@
+.contacts__list-wrapper {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.contacts__email {
+  color: $font-color-grey;
+  padding-bottom: 4px;
+
+  border-bottom: 1px solid $border-green;
+}

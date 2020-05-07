@@ -1,0 +1,17 @@
+.header__logo {
+  display: flex;
+  width: 86px;
+  margin: 0 auto 20px auto;
+}
+
+.header__logo-image {
+  padding-top: 22px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

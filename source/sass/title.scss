@@ -1,0 +1,51 @@
+.h1 {
+  padding-top: 70px;
+  margin-bottom: 130px;
+
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+.h1--index {
+  max-width: 270px;
+  min-height: 210px;
+  margin: auto;
+}
+
+.h2 {
+  margin-bottom: 27px;
+
+  color: $font-color-black;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+
+  &--popular {
+    order: 2;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $font-color-green;
+  }
+
+  &--contacts {
+    font-size: 18px;
+  }
+}
+
+.h3--popular {
+  order: 1;
+
+  margin-bottom: 0;
+
+  color: $font-color-black;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}

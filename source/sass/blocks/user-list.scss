@@ -1,0 +1,27 @@
+.user-list__item {
+  position: relative;
+
+  border-bottom: 1px solid  #ececec;
+}
+
+.user-list__item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+
+  width: 24px;
+  height: 18px;
+
+  vertical-align: bottom;
+
+  background-image: url("../img/svg/icon-search.svg");
+  fill: $border-grey;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+
+  cursor: pointer;
+  outline: none;
+}
