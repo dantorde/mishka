@@ -1,0 +1,24 @@
+.company-block {
+  margin-bottom: 55px;
+}
+
+.company-block__list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.company-block__list-item {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $font-color-black;
+}
+
+.company-block__list-icon {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+  fill: $color-green;
+}
