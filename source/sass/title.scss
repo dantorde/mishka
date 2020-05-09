@@ -1,17 +1,25 @@
 .h1 {
   padding-top: 70px;
   margin-bottom: 130px;
+  margin-top: 0;
 
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
-}
 
-.h1--index {
-  max-width: 270px;
-  min-height: 210px;
-  margin: auto;
+  &--index {
+    max-width: 270px;
+    min-height: 210px;
+    margin: auto;
+  }
+
+  &--catalog {
+    padding-bottom: 80px;
+    margin-bottom: 30px;
+
+    background-color: #f1f1f1;
+  }
 }
 
 .h2 {
@@ -36,6 +44,14 @@
 
   &--contacts {
     font-size: 18px;
+  }
+
+  &--promo-video {
+    margin-top: 30px;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
   }
 }
 
