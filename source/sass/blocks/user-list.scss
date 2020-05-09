@@ -7,16 +7,11 @@
 .user-list__item::before {
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
-
-  width: 24px;
-  height: 18px;
+  top: 30px;
+  left: 20px;
 
   vertical-align: bottom;
 
-  background-image: url("../img/svg/icon-search.svg");
-  fill: $border-grey;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -24,4 +19,34 @@
 
   cursor: pointer;
   outline: none;
+}
+
+.user-list__item--search::before {
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../img/svg/icon-search.svg");
+}
+
+.user-list__item--search a:hover .user-list__item--search::before {
+  background-image: url("../img/svg/icon-search-hover.svg");
+}
+
+.main-nav__list a:active .user-list__item--search::before {
+  background-image: url("../img/svg/icon-search-active.svg");
+}
+
+.user-list__item--cart::before {
+  width: 21px;
+  height: 19px;
+
+  background-image: url("../img/svg/icon-cart.svg");
+}
+
+.main-nav__list a:hover .user-list__item--cart::before {
+  background-image: url("../img/svg/icon-cart-hover.svg");
+}
+
+.main-nav__list a:active .user-list__item--cart::before {
+  background-image: url("../img/svg/icon-cart-active.svg");
 }
