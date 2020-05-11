@@ -8,7 +8,7 @@
   position: absolute;
   content: "";
   top: 30px;
-  left: 20px;
+  left: 30px;
 
   vertical-align: bottom;
 
@@ -28,12 +28,8 @@
   background-image: url("../img/svg/icon-search.svg");
 }
 
-.user-list__item--search a:hover .user-list__item--search::before {
+.user-list__item--search:hover .user-list__item--search::before {
   background-image: url("../img/svg/icon-search-hover.svg");
-}
-
-.main-nav__list a:active .user-list__item--search::before {
-  background-image: url("../img/svg/icon-search-active.svg");
 }
 
 .user-list__item--cart::before {
@@ -41,12 +37,4 @@
   height: 19px;
 
   background-image: url("../img/svg/icon-cart.svg");
-}
-
-.main-nav__list a:hover .user-list__item--cart::before {
-  background-image: url("../img/svg/icon-cart-hover.svg");
-}
-
-.main-nav__list a:active .user-list__item--cart::before {
-  background-image: url("../img/svg/icon-cart-active.svg");
 }
