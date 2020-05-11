@@ -1,0 +1,225 @@
+.form {
+  font-family: $open-sans;
+}
+
+.form fieldset {
+  margin: 0 0 14px 0;
+  padding: 0 0;
+  border: none;
+}
+
+.form legend {
+  margin-bottom: 10px;
+  color: $font-color-green;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.form label {
+  margin-left: 2px;
+
+  color: $font-color-black;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.form__radio label {
+  position: relative;
+  margin-bottom: 25px;
+
+  display: block;
+  padding-left: 65px;
+}
+
+.form__radio legend {
+  margin-bottom: 30px;
+}
+
+.form__radio input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -7px;
+
+  width: 36px;
+  height: 36px;
+
+  border: 2px solid $color-black;
+  border-radius: 50%;
+}
+
+.form__radio input:hover + label::before {
+  border: 2px solid $border-green;
+}
+
+.form__radio input:active + label::before {
+  border: 2px solid $color-black;
+  opacity: 0.3;
+}
+
+.form__radio input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 5px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: $border-green;
+  border-radius: 50%;
+}
+
+.form__checkbox label {
+  position: relative;
+  margin-bottom: 43px;
+
+  display: block;
+  padding-left: 60px;
+}
+
+.form__checkbox legend {
+  margin-bottom: 37px;
+}
+
+
+.form__checkbox input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+  width: 37px;
+  height: 37px;
+  border: 2px solid $color-black;
+
+  transition: 0.3s;
+}
+
+.form__checkbox input:hover + label::before {
+  border: 2px solid $border-green;
+}
+
+.form__checkbox input:active + label::before {
+  border: 2px solid $color-black;
+  opacity: 0.3;
+}
+
+.form__checkbox input:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: 17px;
+
+  top: 45%;
+  width: 8px;
+  height: 21px;
+  border-right: 2px solid $color-black;
+  border-bottom: 2px solid $color-black;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.form__info legend {
+  margin-bottom: 25px;
+}
+
+.form__textarea legend {
+  margin-bottom: 23px;
+}
+
+.form__textarea textarea[placeholder] {
+  opacity: 0.3;
+}
+
+.form__textarea textarea {
+  width: 100%;
+  border: 2px solid $color-black;
+  padding: 14px 13px;
+  transition: 0.3s;
+  height: 110px;
+
+  color: $font-color-grey;
+
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.form__textarea:hover textarea {
+  border: 2px solid $border-green;
+  opacity: 1;
+}
+
+.form input[type="text"] {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 18px;
+
+  color: $font-color-grey;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 0.3;
+
+  border: none;
+  border-bottom: 2px solid $color-black;
+
+  &:hover,
+  &:active {
+    border-bottom: 2px solid $border-green;
+    opacity: 1;
+  }
+}
+
+.form__email,
+.form__tel {
+  position: relative;
+}
+
+.form__email input,
+.form__tel input {
+  padding-right: 50px;
+}
+
+.form__input-svg {
+  position: absolute;
+  display: block;
+  fill: $font-color-grey;
+  opacity: 0.3;
+
+  &--email {
+    top: 37px;
+    right: 4px;
+  }
+
+  &--tel {
+    top: 37px;
+    right: 4px;
+  }
+}
+
+.form__email input:hover .form__input-svg,
+.form__tel input:hover .form__input-svg {
+  fill: $border-green;
+}
+
+.form__note {
+  color: $font-color-grey;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.form__bottom-wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__submit {
+  margin: auto;
+}
