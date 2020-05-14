@@ -5,14 +5,31 @@
 
 .catalog-list__item {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .catalog-list__item a {
   display: inline-block;
 }
 
+.catalog-list__item-image {
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
 .catalog-list__item-wrapper {
   border: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
 }
 
 .catalog-list__item:hover .catalog-list__item-wrapper {
