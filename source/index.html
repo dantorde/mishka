@@ -10,10 +10,10 @@
   <body>
 
     <header class="header">
-      <a class="header__logo" href="">
-        <img class="header__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
-      </a>
       <nav class="main-nav main-nav--opened">
+        <a class="header__logo" href="">
+          <img class="header__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+        </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
@@ -47,34 +47,38 @@
         </section>
       </div>
 
-      <section class="popular">
-        <div class="container">
+      <div class="container">
+        <section class="popular">
+
           <div class="popular__title-wrapper">
             <h2 class="h2 h2--popular">Товар недели</h2>
             <h3 class="h3 h3--popular">Вязаные корзинки</h3>
           </div>
-          <p class="popular__desk">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-          <table class="popular__table">
-            <tr>
-              <th>Цвет:</th>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <th>Диаметр:</th>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <th>Высота:</th>
-              <td>15 см</td>
-            </tr>
-          </table>
-          <img class="popular__image" src="img/triple-set-mobile@1x.jpg" width="" height="" alt="Вязаные корзинки">
-          <div class="popular__price-block">
-            <p class="popular__price">Цена: 990 руб.</p>
-            <a class="popular__button-buy button" href="" >Заказать</a>
+          <div class="popular__info-wrapper">
+            <p class="popular__desk">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+            <table class="popular__table">
+              <tr>
+                <th>Цвет:</th>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <th>Диаметр:</th>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <th>Высота:</th>
+                <td>15 см</td>
+              </tr>
+            </table>
           </div>
-        </div>
-      </section>
+          <img class="popular__image" src="img/triple-set-tablet@1x.jpg" width="" height="" alt="Вязаные корзинки">
+            <div class="popular__price-block">
+              <p class="popular__price">Цена: 990 руб.</p>
+              <a class="popular__button-buy button" href="" >Заказать</a>
+            </div>
+
+        </section>
+      </div>
 
       <div class="wave"></div>
 
@@ -139,7 +143,7 @@
             </div>
             <div class="contacts__list-wrapper">
               <dt class="contacts__title">адрес:</dt>
-              <dd class="contacts__desk">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
+              <dd class="contacts__desk">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
             </div>
           </dl>
           <div class="contacts__map"></div>
@@ -150,7 +154,7 @@
 
     <footer class="footer">
       <a class="footer__logo">
-        <img class="footer__logo-image" src="" width="" height="" alt="Интернет-магазин «Мишка»">
+        <img class="footer__logo-image" src="img/svg/logo-footer.svg" width="102" height="34" alt="Интернет-магазин «Мишка»">
       </a>
       <ul class="footer__social-list">
         <li class="footer__social-item">

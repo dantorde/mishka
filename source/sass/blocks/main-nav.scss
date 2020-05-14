@@ -1,5 +1,11 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__toggle {
@@ -25,7 +31,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -47px;
+  top: 27px;
   right: 27px;
   z-index: 2;
 
@@ -40,6 +46,10 @@
 
   cursor: pointer;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -51,6 +61,10 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .main-nav__list a {
@@ -68,5 +82,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }

@@ -6,6 +6,11 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .company-block__list-item {
@@ -13,6 +18,10 @@
   font-weight: 700;
   line-height: 20px;
   color: $font-color-black;
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+  }
 }
 
 .company-block__list-icon {
