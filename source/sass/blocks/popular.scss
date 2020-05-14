@@ -1,6 +1,42 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
 .popular__title-wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    order: 1;
+  }
+}
+
+.popular__info-wrapper {
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    order: 2;
+  }
+}
+
+.popular__image {
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    width: 50%;
+  }
 }
 
 .popular__table {
@@ -21,6 +57,12 @@
 .popular__price-block {
   display: flex;
   flex-direction: column;
+  order: 3;
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
 }
 
 .popular__price {

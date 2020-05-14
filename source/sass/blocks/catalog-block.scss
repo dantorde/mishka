@@ -1,3 +1,11 @@
+.catalog-block {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
 .catalog-block__item {
   display: flex;
   justify-content: space-between;
@@ -8,6 +16,10 @@
 
   &--toy {
     background-color: #56c3b2;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
   }
 }
 

@@ -2,7 +2,13 @@
   display: flex;
   width: 86px;
   margin: 0 auto 20px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-left: 50px;
+  }
 }
+
 
 .header__logo-image {
   padding-top: 22px;

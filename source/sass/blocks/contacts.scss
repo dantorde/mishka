@@ -1,6 +1,10 @@
 .contacts__list-wrapper {
   display: flex;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .contacts__desk {
@@ -19,5 +23,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.contacts__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
