@@ -8,6 +8,17 @@
   border: none;
 }
 
+.form__fieldset-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.form__input-wrapper--checkbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form legend {
   margin-bottom: 10px;
   color: $font-color-green;
@@ -15,6 +26,10 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+  }
 }
 
 .form label {
@@ -73,12 +88,54 @@
   border-radius: 50%;
 }
 
+fieldset.form__checkbox {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 60px;
+
+    background-color: #f1f1f1;
+  }
+}
+
+.form__checkbox div::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+
+    width: 50px;
+    height: 100%;
+
+    background-color: #f1f1f1;
+  }
+}
+
+.form__checkbox div::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 0;
+
+    width: 50px;
+    height: 100%;
+
+    background-color: #f1f1f1;
+  }
+}
+
+
 .form__checkbox label {
   position: relative;
   margin-bottom: 43px;
 
   display: block;
   padding-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 240px;
+  }
 }
 
 .form__checkbox legend {
@@ -213,13 +270,27 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
 }
 
 .form__bottom-wraper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .form__submit {
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin: 0;
+  }
 }
