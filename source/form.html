@@ -34,66 +34,84 @@
 
         <form class="form" action="/echo" method="post">
           <fieldset class="form__radio">
-            <legend>Тип</legend>
-            <input class="visually-hidden" type="radio" name="supply" id="interior" value="Аксессуар для интерьера" checked>
-            <label for="interior">Аксессуар для интерьера</label>
+            <div class="form__fieldset-wrapper">
+              <legend>Тип</legend>
+              <div class="form__input-wrapper">
+                <input class="visually-hidden" type="radio" name="supply" id="interior" value="Аксессуар для интерьера" checked>
+                <label for="interior">Аксессуар для интерьера</label>
 
-            <input class="visually-hidden" type="radio" name="supply" id="toy" value="Детская игрушка">
-            <label for="toy">Детская игрушка</label>
+                <input class="visually-hidden" type="radio" name="supply" id="toy" value="Детская игрушка">
+                <label for="toy">Детская игрушка</label>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="form__checkbox">
-            <legend>Цвет</legend>
-            <input  class="visually-hidden" type="checkbox" checked name="plus" id="white" checked>
-            <label for="white">Белый</label>
+            <div class="form__fieldset-wrapper">
+              <legend>Цвет</legend>
+              <div class="form__input-wrapper form__input-wrapper--checkbox">
+                <input  class="visually-hidden" type="checkbox" checked name="color" id="white" checked>
+                <label for="white">Белый</label>
 
-            <input  class="visually-hidden" type="checkbox" checked name="plus" id="gray">
-            <label for="gray">Серый</label>
+                <input  class="visually-hidden" type="checkbox" checked name="color" id="gray">
+                <label for="gray">Серый</label>
 
-            <input  class="visually-hidden" type="checkbox" checked name="plus" id="tiffany">
-            <label for="tiffany">«Тиффани»</label>
+                <input  class="visually-hidden" type="checkbox" checked name="color" id="tiffany">
+                <label for="tiffany">«Тиффани»</label>
 
-            <input  class="visually-hidden" type="checkbox" checked name="plus" id="black">
-            <label for="black">Черный</label>
+                <input  class="visually-hidden" type="checkbox" checked name="color" id="black">
+                <label for="black">Черный</label>
 
-            <input  class="visually-hidden" type="checkbox" checked name="plus" id="pink">
-            <label for="pink">Розовый</label>
+                <input  class="visually-hidden" type="checkbox" checked name="color" id="pink">
+                <label for="pink">Розовый</label>
 
-            <input  class="visually-hidden" type="checkbox" checked name="plus" id="orange">
-            <label for="orange">Оранжевый</label>
+                <input  class="visually-hidden" type="checkbox" checked name="color" id="orange">
+                <label for="orange">Оранжевый</label>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="form__info">
-            <legend>ФИО</legend>
-            <label for="name">Имя:</label>
-            <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+            <div class="form__fieldset-wrapper">
+              <legend>ФИО</legend>
+              <div class="form__input-wrapper">
+                <label for="name">Имя:</label>
+                <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
 
-            <label for="name">Фамилия:</label>
-            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+                <label for="name">Фамилия:</label>
+                <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
 
-            <label for="name">Отчество:</label>
-            <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+                <label for="name">Отчество:</label>
+                <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="form__tel">
-            <legend>Тел</legend>
-            <input type="text" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" required>
-            <svg class="form__input-svg form__input-svg--email" width="25" height="24">
-              <use xlink:href="img/sprite.svg#icon-phone"></use>
-            </svg>
+            <div class="form__fieldset-wrapper">
+              <legend>Тел</legend>
+              <input type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" required>
+              <svg class="form__input-svg form__input-svg--email" width="25" height="24">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
           </fieldset>
 
           <fieldset class="form__email">
-            <legend>E-mail</legend>
-            <input type="text" name="email" id="email" placeholder="Ваш Email*" required>
-            <svg class="form__input-svg form__input-svg--email" width="32" height="21">
-              <use xlink:href="img/sprite.svg#icon-mail"></use>
-            </svg>
+            <div class="form__fieldset-wrapper">
+              <legend>E-mail</legend>
+              <input type="email" name="email" id="email" placeholder="Ваш Email*" required>
+              <svg class="form__input-svg form__input-svg--email" width="32" height="21">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </div>
           </fieldset>
 
           <fieldset class="form__textarea">
-            <legend>Доп</legend>
-            <textarea id="textarea-filed" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="form__fieldset-wrapper">
+              <legend>Доп</legend>
+              <textarea id="textarea-filed" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
           </fieldset>
 
           <div class="form__bottom-wraper">
