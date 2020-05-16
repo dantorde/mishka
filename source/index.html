@@ -10,18 +10,24 @@
   <body>
 
     <header class="header">
-      <nav class="main-nav main-nav--opened">
-        <a class="header__logo" href="">
-          <img class="header__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+      <nav class="main-nav main-nav--opened container">
+        <a class="main-nav__logo" href="">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="site-list__item site-list__item--new"><a href="catalog.html">Новые поступления</a></li>
+          <li class="site-list__item site-list__item--sale"><a href="form.html">Распродажа</a></li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item user-list__item--search"><a href="catalog.html">Поиск по сайту</a></li>
           <li class="user-list__item user-list__item--cart"><a href="form.html">Корзина: пока пуста</a></li>
+          <li class="user-list__item user-list__item--cart user-list__item--delivery"><a href="form.html">Бесплатная доставка по России</a></li>
         </ul>
       </nav>
     </header>
@@ -30,7 +36,7 @@
       <div class="main-index__wrapper-back">
         <h1 class="h1 h1--index">Милые штуки ручной работы для дома</h1>
 
-        <section class="catalog-block">
+        <section class="catalog-block container">
           <a href=""  class="catalog-block__item catalog-block__item--interior">
             <span class="catalog-block__title">Предметы интерьера</span>
             <svg class="catalog-block__icon" width="40" height="62">
@@ -131,6 +137,10 @@
             <p>Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="reviews-block__author">Анастасия Красильникова<br/><span>@misssiskras</span></cite>
           </blockquote>
+          <div class="reviews-block__wrapper-button">
+            <a href="" class="button">Назад</a>
+            <a href="" class="button">Вперед</a>
+          </div>
           <a class="reviews-block__button button" href="">Написать</a>
         </div>
       </section>
@@ -157,38 +167,40 @@
     </main>
 
     <footer class="footer">
-      <a class="footer__logo">
-        <img class="footer__logo-image" src="img/svg/logo-footer.svg" width="102" height="34" alt="Интернет-магазин «Мишка»">
-      </a>
-      <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--insta" href="https://www.instagram.com">
-            <svg width="22" height="21" aria-label="Мы в Инстаграме">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--fb" href="https://facebook.com">
-            <svg width="15" height="28" aria-label="Мы в Фейсбукe">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--tw" href="https://vk.com">
-            <svg width="23" height="20" aria-label="Мы в Твитере">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__copyright" href="https://www.google.com/">
-        <span>Разработано</span>
-        <svg width="27" height="34">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy" aria-label="Разработано Html academy"></use>
-        </svg>
-      </a>
+      <div class="container">
+        <a class="footer__logo">
+          <img class="footer__logo-image" src="img/svg/logo-footer.svg" width="102" height="34" alt="Интернет-магазин «Мишка»">
+        </a>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--insta" href="https://www.instagram.com">
+              <svg width="22" height="21" aria-label="Мы в Инстаграме">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--fb" href="https://facebook.com">
+              <svg width="15" height="28" aria-label="Мы в Фейсбукe">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--tw" href="https://vk.com">
+              <svg width="23" height="20" aria-label="Мы в Твитере">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="https://www.google.com/">
+          <span>Разработано</span>
+          <svg width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy" aria-label="Разработано Html academy"></use>
+          </svg>
+        </a>
+      </div>
     </footer>
   </body>
 </html>

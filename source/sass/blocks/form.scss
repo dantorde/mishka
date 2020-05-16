@@ -15,8 +15,10 @@
 }
 
 .form__input-wrapper--checkbox {
-  display: flex;
-  flex-wrap: wrap;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .form legend {
