@@ -52,6 +52,32 @@
   }
 }
 
+.main-nav__logo {
+  display: flex;
+  width: 100%;
+  max-width: 86px;
+  margin: 0 auto 20px auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 113px;
+    margin: 0;
+  }
+}
+
+
+.main-nav__logo-image {
+  padding-top: 22px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
 .main-nav__list {
   display: flex;
   flex-direction: column;

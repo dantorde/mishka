@@ -1,8 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  min-width: 768px;
+  min-width: 320px;
 
   /*временно для моб версии*/
-  max-width: 768px;
+
   /*временно для моб версии*/
 
   margin: 0 auto;
@@ -16,6 +26,8 @@ body {
 
   background-color: $color-white;
 }
+
+
 
 a {
   text-decoration: none;
