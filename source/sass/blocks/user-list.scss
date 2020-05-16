@@ -1,78 +1,65 @@
 .user-list {
   @media (min-width: $tablet-width) {
-    order: 1;
+    order: 2;
     width: auto;
 
     text-align: right;
   }
+
+  @media (min-width: $desk-width) {
+    order: 3;
+  }
 }
 
 .user-list__item {
-  position: relative;
-
   margin-left: -30px;
   margin-right: -30px;
 
   border-bottom: 1px solid  #ececec;
 
   @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+
     border-bottom: none;
   }
 
   &--cart {
+    position: relative;
+
     @media (min-width: $tablet-width) {
-      min-width: 340px;
+      min-width: 240px;
     }
+  }
+
+  &--cart svg {
+    margin-right: 25px;
+    margin-left: -50px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 0;
+    }
+  }
+
+
+  &--search {
+    position: relative;
   }
 
   &--search a {
     @media (min-width: $tablet-width) {
       width: 80px;
-
-      font-size: 0;
     }
   }
 
-  &--delivery {
-    display: none;
-
+  &--search span {
     @media (min-width: $tablet-width) {
-      display: block;
+      display: none;
     }
   }
-}
 
-.user-list__item::before {
-  position: absolute;
-  content: "";
-  top: 30px;
-  left: 30px;
-
-  vertical-align: bottom;
-
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  border: none;
-
-  cursor: pointer;
-  outline: none;
-}
-
-.user-list__item--search::before {
-  width: 18px;
-  height: 18px;
-
-  background-image: url("../img/svg/icon-search.svg");
-}
-
-.user-list__item--search:hover .user-list__item--search::before {
-  background-image: url("../img/svg/icon-search-hover.svg");
-}
-
-.user-list__item--cart::before {
-  width: 21px;
-  height: 19px;
-
-  background-image: url("../img/svg/icon-cart.svg");
+  &--search svg {
+    margin-right: 25px;
+    margin-left: -50px;
+  }
 }
