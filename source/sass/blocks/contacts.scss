@@ -29,5 +29,8 @@
 .contacts__list {
   @media (min-width: $tablet-width) {
     display: flex;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 }

@@ -1,0 +1,12 @@
+.stock-list {
+  display: none;
+
+  @media (min-width: $desk-width) {
+    display: flex;
+    width: auto;
+  }
+
+  @media (min-width: $desk-width) {
+    order: 4;
+  }
+}
