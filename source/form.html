@@ -29,10 +29,9 @@
     <main class="main">
       <h1 class="h1 h1--form">Вязание на заказ</h1>
       <div class="container">
-        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
-
 
         <form class="form" action="/echo" method="post">
+          <p class="fotm__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
           <fieldset class="form__radio">
             <div class="form__fieldset-wrapper">
               <legend>Тип</legend>
@@ -75,14 +74,21 @@
             <div class="form__fieldset-wrapper">
               <legend>ФИО</legend>
               <div class="form__input-wrapper">
-                <label for="name">Имя:</label>
-                <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+                <div class="form__info-wrapper">
+                  <label for="name">Имя:</label>
+                  <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+                </div>
 
-                <label for="name">Фамилия:</label>
-                <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+                <div class="form__info-wrapper">
+                  <label for="name">Фамилия:</label>
+                  <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+                </div>
 
-                <label for="name">Отчество:</label>
-                <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+
+                <div class="form__info-wrapper">
+                  <label for="name">Отчество:</label>
+                  <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+                </div>
               </div>
             </div>
           </fieldset>
