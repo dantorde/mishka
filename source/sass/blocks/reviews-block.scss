@@ -41,7 +41,11 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
-    top: 0;
+    top: 120px;
     right: 20px;
   }
+}
+
+.reviews-block__wrapper-button {
+  display: flex;
 }

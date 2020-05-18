@@ -1,6 +1,14 @@
 .catalog-list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: $desk-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-between;
+    margin-left: -50px;
+  }
 }
 
 .catalog-list__item {
@@ -8,6 +16,12 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desk-width) {
+    flex-direction: column;
+    width: 316px;
+    margin-left: 50px;
   }
 }
 
