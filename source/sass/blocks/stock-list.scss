@@ -3,10 +3,33 @@
 
   @media (min-width: $desk-width) {
     display: flex;
+    order: 4;
     width: auto;
+    padding-top: 10px;
+  }
+}
+
+.stock-list__item a {
+  @media (min-width: $desk-width) {
+    display: inline-block;
+    width: 100%;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: $font-color-black;
+  }
+}
+
+.stock-list__item {
+  &:hover {
+    opacity: 0.6;
   }
 
-  @media (min-width: $desk-width) {
-    order: 4;
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:not(:last-child) {
+    margin-right: 60px;
   }
 }
