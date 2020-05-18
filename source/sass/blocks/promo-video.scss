@@ -11,7 +11,7 @@
 }
 
 .promo-video__title svg {
-  padding-right: 25px;
+  margin-right: 25px;
 
   fill: #63d1bb;
 }
@@ -19,4 +19,13 @@
 .promo-video__desk {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.promo-video__wrapper {
+  position: relative;
+}
+
+.promo-video__link {
+  position: absolute;
+  content: " ";
 }
