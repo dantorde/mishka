@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: 1;
   }
 
   @media (min-width: $desk-width) {
@@ -97,7 +98,6 @@
     padding-top: 12px;
   }
 }
-
 
 .main-nav__list {
   display: flex;
