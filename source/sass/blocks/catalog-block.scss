@@ -36,6 +36,19 @@
     flex-grow: 1;
   }
 
+  @media (min-width: $tablet-width) {
+    height: 119px;
+
+    &:hover {
+      height: 124px;
+      margin-top: -5px;
+    }
+
+    &:active span {
+      opacity: 0.3;
+    }
+  }
+
   &--interior {
     background-color: #63d1bb;
 
@@ -95,6 +108,14 @@
   margin-left: 30px;
 
   opacity: 0.5;
+}
+
+.catalog-block__item:hover svg {
+  opacity: 0.7;
+}
+
+.catalog-block__item:active svg {
+  opacity: 0.3;
 }
 
 .catalog-block__icon {
