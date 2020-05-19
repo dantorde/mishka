@@ -1,5 +1,9 @@
 .company-block {
   margin-bottom: 55px;
+
+  @media (min-width: $desk-width) {
+    padding-left: 175px;
+  }
 }
 
 .company-block__list {
@@ -10,12 +14,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    max-width: 660px;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 700px;
+    margin-top: -10px;
   }
 
   @media (min-width: $desk-width) {
-    max-width: 670px;
+    max-width: 700px;
   }
 }
 
