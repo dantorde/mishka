@@ -2,7 +2,30 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $desk-width) {
+    position: relative;
+  }
+}
+
+.popular__wrapper {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc((100vw - 100px) / 2 * 1.21 + 10px);
+    max-height: 618px;
+  }
+
+  @media (min-width: $desk-width) {
+    position: static;
+
+    height: calc((100vw - 100px) / 2 * 1.21 - 155px);
+    max-height: 630px;
+
+    padding-left: 175px;
+  }
 }
 
 .popular__title-wrapper {
@@ -12,34 +35,64 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desk-width) {
+    margin-top: 70px;
+    justify-content: flex-start;
+    padding-left: 40px;
   }
 }
 
 .popular__info-wrapper {
-  order: 1;
-
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 44%;
+
+    @media (min-width: $desk-width) {
+      width: 30%;
+    }
   }
 }
 
 .popular__image {
-  order: 2;
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
     right: 0;
+    top: 10px;
+
+    width: 50%;
+  }
+
+  @media (min-width: $desk-width) {
+    top: 70px;
+    z-index: -1;
+    max-width: 1050px;
   }
 }
 
 .popular__table {
   margin-bottom: 25px;
+  margin-top: 20px;
+
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .popular__table th {
   padding-right: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 
   font-weight: 400;
   text-align: left;
@@ -52,7 +105,14 @@
 .popular__price-block {
   display: flex;
   flex-direction: column;
-  order: 3;
+
+  @media (min-width: $tablet-width) {
+    width: 44%;
+  }
+
+  @media (min-width: $desk-width) {
+    width: 30%;
+  }
 }
 
 .popular__price {
@@ -62,8 +122,27 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .popular__button-buy {
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.popular__desk {
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-top: 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
