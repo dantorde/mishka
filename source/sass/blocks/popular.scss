@@ -14,13 +14,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: calc((100vw - 100px) / 2 * 1.21);
+    height: calc((100vw - 100px) / 2 * 1.21 + 10px);
+    max-height: 618px;
   }
 
   @media (min-width: $desk-width) {
     position: static;
 
-    min-height: calc((100vw - 100px) / 2 * 1.21 - 100px);
+    height: calc((100vw - 100px) / 2 * 1.21 - 155px);
+    max-height: 630px;
 
     padding-left: 175px;
   }
@@ -33,12 +35,20 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desk-width) {
+    margin-top: 70px;
+    justify-content: flex-start;
+    padding-left: 40px;
   }
 }
 
 .popular__info-wrapper {
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 44%;
 
     @media (min-width: $desk-width) {
       width: 30%;
@@ -56,12 +66,13 @@
     position: absolute;
     content: "";
     right: 0;
-    top: 0;
+    top: 10px;
 
     width: 50%;
   }
 
   @media (min-width: $desk-width) {
+    top: 70px;
     z-index: -1;
     max-width: 1050px;
   }
@@ -69,10 +80,19 @@
 
 .popular__table {
   margin-bottom: 25px;
+  margin-top: 20px;
+
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .popular__table th {
   padding-right: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 
   font-weight: 400;
   text-align: left;
@@ -87,7 +107,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 44%;
   }
 
   @media (min-width: $desk-width) {
@@ -102,8 +122,27 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .popular__button-buy {
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.popular__desk {
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    margin-top: 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

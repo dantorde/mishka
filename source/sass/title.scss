@@ -58,6 +58,11 @@
     line-height: 50px;
   }
 
+  @media (min-width: $desk-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
   &--popular {
     order: 2;
 
@@ -68,6 +73,12 @@
     line-height: 17px;
     text-transform: uppercase;
     color: $font-color-green;
+
+    @media (min-width: $tablet-width) {
+      width: 100px;
+      text-align: center;
+      margin-bottom: 8px;
+    }
 
     @media (min-width: $desk-width) {
       order: 1;
@@ -106,6 +117,7 @@
 
   @media (min-width: $desk-width) {
     order: 2;
+    margin-left: 30px;
 
     font-size: 53px;
     line-height: 57px;

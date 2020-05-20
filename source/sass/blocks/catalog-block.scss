@@ -17,6 +17,7 @@
     background-image: url("../img/svg/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: contain;
+    background-position: center;
   }
 
   @media (min-width: $desk-width) {
@@ -27,8 +28,11 @@
 .catalog-block__item {
   display: flex;
   justify-content: space-between;
-  max-width: 400px;
   margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: -30px;
+  margin-right: -30px;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -49,7 +53,8 @@
 
   &--interior {
     background-color: #63d1bb;
-
+  }
+/*
     &::before {
       @media (max-width: $max-mobile-width) {
         content: "";
@@ -64,7 +69,8 @@
         background-color: #63d1bb;
       }
     }
-  }
+    */
+
 
   &--toy {
     background-color: #56c3b2;

@@ -7,4 +7,16 @@
   background-position: left bottom;
   background-repeat: repeat-x;
   background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    height: 17px;
+    margin-top: 53px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desk-width) {
+    height: 23px;
+    margin-top: 73px;
+    margin-bottom: 58px;
+  }
 }
