@@ -77,33 +77,36 @@
             <h2 class="h2 h2--popular">Товар недели</h2>
             <h3 class="h3 h3--popular">Вязаные корзинки</h3>
           </div>
-          <div class="popular__info-wrapper">
-            <p class="popular__desk">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-            <table class="popular__table">
-              <tr>
-                <th>Цвет:</th>
-                <td>«Тиффани»/серый</td>
-              </tr>
-              <tr>
-                <th>Диаметр:</th>
-                <td>25 см</td>
-              </tr>
-              <tr>
-                <th>Высота:</th>
-                <td>15 см</td>
-              </tr>
-            </table>
-          </div>
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg">
-            <img class="popular__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
-          </picture>
-
-            <div class="popular__price-block">
-              <p class="popular__price">Цена: 990 руб.</p>
-              <a class="popular__button-buy button" href="" >Заказать</a>
+          <div class="popular__wrapper">
+            <div class="popular__info-wrapper">
+              <p class="popular__desk">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+              <table class="popular__table">
+                <tr>
+                  <th>Цвет:</th>
+                  <td>«Тиффани»/серый</td>
+                </tr>
+                <tr>
+                  <th>Диаметр:</th>
+                  <td>25 см</td>
+                </tr>
+                <tr>
+                  <th>Высота:</th>
+                  <td>15 см</td>
+                </tr>
+              </table>
             </div>
+            <picture>
+              <source media="(min-width: 1400px)" size="50vw" srcset="img/triple-set-desktop@1x.jpg 525w, img/triple-set-desktop@2x.jpg 1050w">
+              <source media="(min-width: 1049px)" size="50vw" srcset="img/triple-set-tablet@1x.jpg 333w, img/triple-set-tablet@2x.jpg 525w">
+              <source media="(min-width: 767px)" size="100vw" srcset="img/triple-set-mobile@1x.jpg 260w, img/triple-set-mobile@2x.jpg 520w">
+              <img class="popular__image" src="img/triple-set-mobile@1x.jpg" size="100vw" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
 
+              <div class="popular__price-block">
+                <p class="popular__price">Цена: 990 руб.</p>
+                <a class="popular__button-buy button" href="" >Заказать</a>
+              </div>
+          </div>
         </section>
       </div>
 

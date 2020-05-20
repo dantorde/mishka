@@ -31,12 +31,10 @@
   margin: auto;
 
   @media (min-width: $tablet-width) {
+    width: 50%;
     max-width: 100%;
     margin: 0;
     flex-grow: 1;
-  }
-
-  @media (min-width: $tablet-width) {
     height: 119px;
 
     &:hover {
