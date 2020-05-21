@@ -89,6 +89,31 @@
     @media (max-width: $max-mobile-width) {
       font-size: 18px;
     }
+
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+
+    @media (min-width: $desk-width) {
+      margin-top: 70px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: -15px;
+
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../img/svg/icon-flag.svg");
+
+      @media (min-width: $desk-width) {
+        left: -110px;
+        top: -10px;
+      }
+    }
   }
 
   &--promo-video {

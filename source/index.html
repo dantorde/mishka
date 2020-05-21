@@ -174,8 +174,8 @@
 
       <div class="wave"></div>
 
-      <section class="contacts">
-        <div class="container">
+      <div class="container">
+        <section class="contacts">
           <h2 class="h2 h2--contacts">Контакты</h2>
           <dl class="contacts__list">
             <div class="contacts__list-wrapper">
@@ -187,10 +187,21 @@
               <dd class="contacts__desk">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
             </div>
           </dl>
-          <div class="contacts__map"></div>
+          <div class="contacts__map">
+            <div class="contacts__map-wrapper">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" size="100vw" srcset="img/map-tablet@1x.jpg 768w, img/map-tablet@2x.jpg 1536w">
+                <source media="(min-width: 320px)" size="100vw" srcset="img/map-mobile@1x.jpg 322w, img/map-mobile@2x.jpg 644w">
+                <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+              </picture>
+              <div class="contacts__map-marker"></div>
+            </div>
+
+          </div>
         <a class="contacts__button button" href="">Напишите нам</a>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
