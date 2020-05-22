@@ -64,14 +64,14 @@
   padding-left: calc((100vw - 190px) / 2);
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+    padding: 15px 0 0 0;
 
     font-size: 15px;
   }
 
   @media (min-width: $desk-width) {
     padding-left: 0;
-    padding-top: 34px;
+    padding-top: 30px;
     padding-bottom: 33px;
 
     font-size: 17px;
