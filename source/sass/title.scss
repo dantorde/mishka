@@ -9,6 +9,8 @@
   text-align: center;
   color: $font-color-black;
 
+  border-top: 1px solid $border-light-gray;
+
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
@@ -27,21 +29,54 @@
 
     @media (min-width: $tablet-width) {
       min-width: 530px;
-      padding-top: 140px;
+      padding-top: 153px;
       min-height: 625px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desk-width) {
       min-width: 620px;
     }
   }
 
   &--catalog,
   &--form {
+    position: relative;
+
     padding-bottom: 80px;
     margin-bottom: 30px;
 
     background-color: #f1f1f1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: -53px;
+      margin-bottom: 80px;
+      padding-top: 90px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -13px;
+
+        width: 100vw;
+        height: 24px;
+
+        background-image: url("../img/svg/bg-zigzag-fill.svg");
+        background-repeat: repeat-x;
+        background-size: 768px 24px;
+
+        @media (min-width: $desk-width) {
+          height: 34px;
+          background-size: 1150px 34px;
+        }
+      }
+    }
+
+    @media (min-width: $desk-width) {
+      margin-top: -56px;
+      padding-bottom: 110px;
+      margin-bottom: 120px;
+    }
   }
 }
 
