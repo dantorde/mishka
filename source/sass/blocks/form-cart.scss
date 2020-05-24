@@ -1,0 +1,46 @@
+.form-cart {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.form-cart label {
+  padding: 16px 33px 15px;
+
+  font-weight: 700;
+  line-height: 17px;
+  text-align: center;
+
+  border: 2px solid $light-grey;
+
+  &:hover {
+    border: 2px solid #c7c7c7;
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+  }
+}
+
+.form-cart__button {
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 16px 0;
+
+  color: $font-color-white;
+
+  border: none;
+  background-color: #63d2bd;
+}
+
+.form-cart__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form-cart__radio:checked + label {
+  border: 2px solid #62d1ba;
+}

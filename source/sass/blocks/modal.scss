@@ -1,0 +1,28 @@
+.modal {
+  display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+
+  width: 100%;
+  max-width: 350px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  background: $color-white;
+  border: 1px solid #c8c8c8;
+  border-bottom: none;
+  box-shadow: 0 5px 10px 0 rgba($color-black, 0.2);
+}
+
+.modal--show {
+  display: block;
+}
