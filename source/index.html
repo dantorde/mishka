@@ -198,10 +198,14 @@
               <div class="contacts__map-marker"></div>
             </div>
 
+
           </div>
         <a class="contacts__button button" href="">Напишите нам</a>
+
         </section>
+
       </div>
+      <div id="map" style="width:400px; height:300px"></div>
     </main>
 
     <footer class="footer container">
@@ -240,5 +244,28 @@
         </svg>
       </a>
     </footer>
+
+    <section class="cart-modal modal">
+      <h2 class="cart-modal__title">Добавить в корзину</h2>
+      <div class="cart-modal__toggle-position"></div>
+      <button class="cart-modal__toggle-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+      <form class="form-cart" action="" method="POST">
+        <p>Выберите размер:</p>
+        <div class="form-cart__input-wrapper">
+          <input class="form-cart__radio visually-hidden" type="radio" id="size-s" name="size" value="S" checked>
+          <label class="form-cart__label" for="size-s">S</label>
+          <input class="form-cart__radio visually-hidden" type="radio" id="size-m" name="size" value="M">
+          <label class="form-cart__label" for="size-m">M</label>
+          <input class="form-cart__radio visually-hidden" type="radio" id="size-l" name="size" value="L">
+          <label class="form-cart__label" for="size-l">L</label>
+        </div>
+
+        <button class="form-cart__button button" type="submit">Добавить</button>
+      </form>
+    </section>
+    <div class="modal-overlay"></div>
+
+  <script src="js/index.js" ></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b8f5a29c-12ba-43ca-b366-c168cb670e61&lang=ru_RU" type="text/javascript"></script>
   </body>
 </html>

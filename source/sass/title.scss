@@ -43,7 +43,7 @@
     position: relative;
 
     padding-bottom: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     background-color: #f1f1f1;
 
@@ -134,15 +134,17 @@
     }
 
     &::after {
-      position: absolute;
-      content: "";
-      right: 0;
-      top: -15px;
+      @media (min-width: $tablet-width) {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: -15px;
 
-      width: 47px;
-      height: 81px;
+        width: 47px;
+        height: 81px;
 
-      background-image: url("../img/svg/icon-flag.svg");
+        background-image: url("../img/svg/icon-flag.svg");
+      }
 
       @media (min-width: $desk-width) {
         left: -110px;

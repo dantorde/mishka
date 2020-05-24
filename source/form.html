@@ -10,19 +10,41 @@
   <body>
 
     <header class="header">
-      <a class="header__logo" href="">
-        <img class="header__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
-      </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--opened container">
+        <a class="main-nav__logo" href="">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/svg/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
+          </picture>
+        </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
         </ul>
         <ul class="main-nav__list user-list">
-          <li class="user-list__item user-list__item--search"><a href="catalog.html">Поиск по сайту</a></li>
-          <li class="user-list__item user-list__item--cart"><a href="form.html">Корзина: пока пуста</a></li>
+          <li class="user-list__item user-list__item--search"><a href="">
+            <svg class="user-navigation__link-image" width="20" height="19">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+            <span>Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="user-list__item user-list__item--cart">
+            <a href="">
+            <svg class="user-navigation__link-image" width="20" height="19">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span>Корзина: пока пуста</span>
+            </a>
+          </li>
         </ul>
+        <ul class="main-nav__list stock-list">
+          <li class="stock-list__item"><a href="">Новые поступления</a></li>
+          <li class="stock-list__item"><a href="">Распродажа</a></li>
+        </ul>
+        <p class="main-nav__note">Бесплатная доставка по России</p>
       </nav>
     </header>
 
@@ -80,13 +102,13 @@
                 </div>
 
                 <div class="form__info-wrapper">
-                  <label for="name">Фамилия:</label>
+                  <label for="surname">Фамилия:</label>
                   <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
                 </div>
 
 
                 <div class="form__info-wrapper">
-                  <label for="name">Отчество:</label>
+                  <label for="patronymic">Отчество:</label>
                   <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
                 </div>
               </div>
@@ -131,9 +153,11 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
       <a class="footer__logo">
-        <img class="footer__logo-image" src="" width="" height="" alt="Интернет-магазин «Мишка»">
+        <svg width="102" height="34" aria-label="Интернет-магазин «Мишка»">
+          <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+        </svg>
       </a>
       <ul class="footer__social-list">
         <li class="footer__social-item">
@@ -158,7 +182,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer__copyright" href="https://www.google.com/">
+      <a class="footer__copyright" href="">
         <span>Разработано</span>
         <svg width="27" height="34">
           <use xlink:href="img/sprite.svg#icon-htmlacademy" aria-label="Разработано Html academy"></use>
