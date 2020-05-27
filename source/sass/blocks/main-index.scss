@@ -16,6 +16,7 @@
 
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
+    background-size: auto 76%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
