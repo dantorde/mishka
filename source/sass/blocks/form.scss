@@ -78,6 +78,10 @@
   line-height: 16px;
   text-transform: uppercase;
 
+  @media (max-width: $max-mobile-width) {
+    width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     width: 205px;
   }
