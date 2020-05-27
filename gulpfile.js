@@ -17,6 +17,9 @@ var include = require("posthtml-include");
 var del = require("del");
 var uglify = require('gulp-uglify');
 
+const ghPages = require('gh-pages');
+const path = require('path');
+
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -103,6 +106,11 @@ gulp.task("refresh", function (done) {
   server.reload();
   done();
 });
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 gulp.task("build", gulp.series("clean", "copy", "webp", "css", "sprite", "html", "script"));
 
