@@ -1,5 +1,10 @@
 .site-list {
+  &--closed {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
+    display: flex;
     order: 3;
     width: auto;
   }

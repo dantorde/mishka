@@ -1,5 +1,10 @@
 .user-list {
+  &--closed {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
+    display: flex;
     order: 2;
     width: auto;
 
