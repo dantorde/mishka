@@ -21,8 +21,8 @@
   border: 1px solid #c8c8c8;
   border-bottom: none;
   box-shadow: 0 5px 10px 0 rgba($color-black, 0.2);
-}
 
-.modal--show {
-  display: block;
+  &--show {
+    display: block;
+  }
 }

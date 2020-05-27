@@ -1,6 +1,7 @@
 .h1 {
-  padding-top: 70px;
-  margin-bottom: 130px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  margin-bottom: 25px;
   margin-top: 0;
 
   font-size: 27px;
@@ -10,73 +11,44 @@
   color: $font-color-black;
 
   border-top: 1px solid $border-light-gray;
+  background-color: #f1f1f1;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    margin-top: -53px;
+    margin-bottom: 80px;
+    padding-top: 90px;
+
     font-size: 43px;
     line-height: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -13px;
+
+      width: 100vw;
+      height: 24px;
+
+      background-image: url("../img/svg/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: 768px 24px;
+
+      @media (min-width: $desk-width) {
+        height: 34px;
+        background-size: 1150px 34px;
+      }
+    }
   }
 
   @media (min-width: $desk-width) {
+    margin-top: -56px;
+    padding-bottom: 110px;
+    margin-bottom: 120px;
+
     font-size: 53px;
     line-height: 57px;
-  }
-
-
-  &--index {
-    max-width: 270px;
-    min-height: 280px;
-    margin: auto;
-
-    @media (min-width: $tablet-width) {
-      min-width: 530px;
-      padding-top: 153px;
-      min-height: 625px;
-    }
-
-    @media (min-width: $desk-width) {
-      min-width: 620px;
-    }
-  }
-
-  &--catalog,
-  &--form {
-    position: relative;
-
-    padding-bottom: 80px;
-    margin-bottom: 25px;
-
-    background-color: #f1f1f1;
-
-    @media (min-width: $tablet-width) {
-      margin-top: -53px;
-      margin-bottom: 80px;
-      padding-top: 90px;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -13px;
-
-        width: 100vw;
-        height: 24px;
-
-        background-image: url("../img/svg/bg-zigzag-fill.svg");
-        background-repeat: repeat-x;
-        background-size: 768px 24px;
-
-        @media (min-width: $desk-width) {
-          height: 34px;
-          background-size: 1150px 34px;
-        }
-      }
-    }
-
-    @media (min-width: $desk-width) {
-      margin-top: -56px;
-      padding-bottom: 110px;
-      margin-bottom: 120px;
-    }
   }
 }
 
@@ -94,93 +66,6 @@
   }
 
   @media (min-width: $desk-width) {
-    font-size: 53px;
-    line-height: 57px;
-  }
-
-  &--popular {
-    order: 2;
-
-    margin-top: 5px;
-    margin-bottom: 10px;
-
-    font-size: 17px;
-    line-height: 17px;
-    text-transform: uppercase;
-    color: $font-color-green;
-
-    @media (min-width: $tablet-width) {
-      width: 100px;
-      text-align: center;
-      margin-bottom: 8px;
-    }
-
-    @media (min-width: $desk-width) {
-      order: 1;
-    }
-  }
-
-  &--contacts {
-    @media (max-width: $max-mobile-width) {
-      font-size: 18px;
-    }
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-    }
-
-    @media (min-width: $desk-width) {
-      margin-top: 70px;
-    }
-
-    &::after {
-      @media (min-width: $tablet-width) {
-        position: absolute;
-        content: "";
-        right: 0;
-        top: -15px;
-
-        width: 47px;
-        height: 81px;
-
-        background-image: url("../img/svg/icon-flag.svg");
-      }
-
-      @media (min-width: $desk-width) {
-        left: -110px;
-        top: -10px;
-      }
-    }
-  }
-
-  &--promo-video {
-    margin-top: 30px;
-
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 24px;
-  }
-}
-
-.h3--popular {
-  order: 1;
-
-  margin-bottom: 0;
-
-  color: $font-color-black;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 30px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  @media (min-width: $desk-width) {
-    order: 2;
-    margin-left: 30px;
-
     font-size: 53px;
     line-height: 57px;
   }

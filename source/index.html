@@ -3,15 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин предметов интерьера и детских игрушек «Мишка»</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <script src="js/picturefill.js" ></script>
   </head>
+
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="header">
-      <nav class="main-nav main-nav--opened container">
-        <a class="main-nav__logo" href="">
+      <nav class="main-nav main-nav--no-js container">
+        <a class="main-nav__logo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
@@ -24,19 +29,20 @@
           <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
         </ul>
         <ul class="main-nav__list user-list">
-          <li class="user-list__item user-list__item--search"><a href="">
-            <svg class="user-navigation__link-image" width="20" height="19">
-              <use xlink:href="img/sprite.svg#icon-search"></use>
-            </svg>
-            <span>Поиск по сайту</span>
+          <li class="user-list__item user-list__item--search">
+            <a href="">
+              <svg class="user-list__link-image" width="20" height="19">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              <span>Поиск по сайту</span>
             </a>
           </li>
           <li class="user-list__item user-list__item--cart">
             <a href="">
-            <svg class="user-navigation__link-image" width="20" height="19">
-              <use xlink:href="img/sprite.svg#icon-cart"></use>
-            </svg>
-            <span>Корзина: пока пуста</span>
+              <svg class="user-list__link-image" width="20" height="19">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              <span>Корзина: пока пуста</span>
             </a>
           </li>
         </ul>
@@ -50,32 +56,32 @@
 
     <main class="main-index">
       <div class="main-index__wrapper-back">
-        <h1 class="h1 h1--index">Милые штуки ручной работы для дома</h1>
+        <h1 class="h1 main-index__title">Милые штуки ручной работы для дома</h1>
 
         <section class="catalog-block container">
-          <a href=""  class="catalog-block__item catalog-block__item--interior">
+          <a href="catalog.html"  class="catalog-block__item catalog-block__item--interior">
             <span class="catalog-block__title">Предметы интерьера</span>
             <svg class="catalog-block__icon" width="40" height="62">
               <use xlink:href="img/sprite.svg#icon-interior"></use>
             </svg>
           </a>
 
-          <a href=""  class="catalog-block__item catalog-block__item--toy">
+          <a href="catalog.html"  class="catalog-block__item catalog-block__item--toy">
             <span class="catalog-block__title">Детские игрушки</span>
             <svg class="catalog-block__icon" width="60" height="62">
               <use xlink:href="img/sprite.svg#icon-toy"></use>
             </svg>
           </a>
         </section>
-        <div class="catalog-block__wave"></div>
+        <div class="main-index__wave"></div>
       </div>
 
       <div class="container">
         <section class="popular">
 
           <div class="popular__title-wrapper">
-            <h2 class="h2 h2--popular">Товар недели</h2>
-            <h3 class="h3 h3--popular">Вязаные корзинки</h3>
+            <h2 class="h2 popular__title-h2">Товар недели</h2>
+            <h3 class="h3 popular__title-h3">Вязаные корзинки</h3>
           </div>
           <div class="popular__wrapper">
             <div class="popular__info-wrapper">
@@ -96,16 +102,19 @@
               </table>
             </div>
             <picture>
-              <source media="(min-width: 1400px)" size="50vw" srcset="img/triple-set-desktop@1x.jpg 525w, img/triple-set-desktop@2x.jpg 1050w">
-              <source media="(min-width: 1049px)" size="50vw" srcset="img/triple-set-tablet@1x.jpg 333w, img/triple-set-tablet@2x.jpg 525w">
-              <source media="(min-width: 767px)" size="100vw" srcset="img/triple-set-mobile@1x.jpg 260w, img/triple-set-mobile@2x.jpg 520w">
+              <source type="image/webp" media="(min-width: 1050px)" size="50vw" srcset="img/triple-set-desktop@1x.webp 525w, img/triple-set-desktop@2x.webp 1050w">
+              <source type="image/webp" media="(min-width: 768px)" size="50vw" srcset="img/triple-set-tablet@1x.webp 333w, img/triple-set-tablet@2x.webp 525w">
+              <source type="image/webp" media="(min-width: 320px)" size="100vw" srcset="img/triple-set-mobile@1x.webp 260w, img/triple-set-mobile@2x.webp 520w">
+              <source media="(min-width: 1050px)" size="50vw" srcset="img/triple-set-desktop@1x.jpg 525w, img/triple-set-desktop@2x.jpg 1050w">
+              <source media="(min-width: 768px)" size="50vw" srcset="img/triple-set-tablet@1x.jpg 333w, img/triple-set-tablet@2x.jpg 525w">
+              <source media="(min-width: 320px)" size="100vw" srcset="img/triple-set-mobile@1x.jpg 260w, img/triple-set-mobile@2x.jpg 520w">
               <img class="popular__image" src="img/triple-set-mobile@1x.jpg" size="100vw" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
             </picture>
 
-              <div class="popular__price-block">
-                <p class="popular__price">Цена: 990 руб.</p>
-                <a class="popular__button-buy button" href="" >Заказать</a>
-              </div>
+            <div class="popular__price-block">
+              <p class="popular__price">Цена: 990 руб.</p>
+              <a class="popular__button-buy button" href="" >Заказать</a>
+            </div>
           </div>
         </section>
       </div>
@@ -176,7 +185,7 @@
 
       <div class="container">
         <section class="contacts">
-          <h2 class="h2 h2--contacts">Контакты</h2>
+          <h2 class="h2 contacts__title-h2">Контакты</h2>
           <dl class="contacts__list">
             <div class="contacts__list-wrapper">
               <dt class="contacts__title">e-mail:</dt>
@@ -187,25 +196,13 @@
               <dd class="contacts__desk">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
             </div>
           </dl>
-          <div class="contacts__map">
-            <div class="contacts__map-wrapper">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" size="100vw" srcset="img/map-tablet@1x.jpg 768w, img/map-tablet@2x.jpg 1536w">
-                <source media="(min-width: 320px)" size="100vw" srcset="img/map-mobile@1x.jpg 322w, img/map-mobile@2x.jpg 644w">
-                <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-              </picture>
-              <div class="contacts__map-marker"></div>
-            </div>
 
-
-          </div>
-        <a class="contacts__button button" href="">Напишите нам</a>
-
+          <div id="map" class="contacts__yamap"></div>
+          <a class="contacts__button button" href="">Напишите нам</a>
         </section>
 
       </div>
-      <div id="map" style="width:400px; height:300px"></div>
+
     </main>
 
     <footer class="footer container">
@@ -252,12 +249,12 @@
       <form class="form-cart" action="" method="POST">
         <p>Выберите размер:</p>
         <div class="form-cart__input-wrapper">
-          <input class="form-cart__radio visually-hidden" type="radio" id="size-s" name="size" value="S" checked>
-          <label class="form-cart__label" for="size-s">S</label>
-          <input class="form-cart__radio visually-hidden" type="radio" id="size-m" name="size" value="M">
-          <label class="form-cart__label" for="size-m">M</label>
-          <input class="form-cart__radio visually-hidden" type="radio" id="size-l" name="size" value="L">
-          <label class="form-cart__label" for="size-l">L</label>
+          <input class="form-cart__radio visually-hidden" type="radio" id="size_s" name="size" value="S" checked>
+          <label class="form-cart__label" for="size_s">S</label>
+          <input class="form-cart__radio visually-hidden" type="radio" id="size_m" name="size" value="M">
+          <label class="form-cart__label" for="size_m">M</label>
+          <input class="form-cart__radio visually-hidden" type="radio" id="size_l" name="size" value="L">
+          <label class="form-cart__label" for="size_l">L</label>
         </div>
 
         <button class="form-cart__button button" type="submit">Добавить</button>
@@ -265,7 +262,10 @@
     </section>
     <div class="modal-overlay"></div>
 
-  <script src="js/index.js" ></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=b8f5a29c-12ba-43ca-b366-c168cb670e61&lang=ru_RU" type="text/javascript"></script>
+
+    <script src="js/menu.min.js"></script>
+    <script src="js/modal.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b8f5a29c-12ba-43ca-b366-c168cb670e61&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/yamap.min.js"></script>
   </body>
 </html>

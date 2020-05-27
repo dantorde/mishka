@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин предметов интерьера и детских игрушек «Мишка»</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
+    <div style="display:none">
+      <include src="source/img/sprite.svg"></include>
+    </div>
 
     <header class="header">
-      <nav class="main-nav main-nav--opened container">
-        <a class="main-nav__logo" href="">
+      <nav class="main-nav main-nav--no-js container">
+        <a class="main-nav__logo" href="index.html">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/svg/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
@@ -25,7 +28,7 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item user-list__item--search"><a href="">
-            <svg class="user-navigation__link-image" width="20" height="19">
+            <svg class="user-list__link-image" width="20" height="19">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
             <span>Поиск по сайту</span>
@@ -33,7 +36,7 @@
           </li>
           <li class="user-list__item user-list__item--cart">
             <a href="">
-            <svg class="user-navigation__link-image" width="20" height="19">
+            <svg class="user-list__link-image" width="20" height="19">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
             <span>Корзина: пока пуста</span>
@@ -53,10 +56,10 @@
       <div class="container">
 
         <form class="form" action="/echo" method="post">
-          <p class="fotm__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <p class="form__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
           <fieldset class="form__radio">
             <div class="form__fieldset-wrapper">
-              <legend>Тип</legend>
+              <legend><span class="form__legend">Тип</span></legend>
               <div class="form__input-wrapper">
                 <input class="visually-hidden" type="radio" name="supply" id="interior" value="Аксессуар для интерьера" checked>
                 <label for="interior">Аксессуар для интерьера</label>
@@ -69,7 +72,7 @@
 
           <fieldset class="form__checkbox">
             <div class="form__fieldset-wrapper">
-              <legend>Цвет</legend>
+              <legend><span class="form__legend">Цвет</span></legend>
               <div class="form__input-wrapper form__input-wrapper--checkbox">
                 <input  class="visually-hidden" type="checkbox" checked name="color" id="white" checked>
                 <label for="white">Белый</label>
@@ -94,7 +97,7 @@
 
           <fieldset class="form__info">
             <div class="form__fieldset-wrapper">
-              <legend>ФИО</legend>
+              <legend><span class="form__legend">ФИО</span></legend>
               <div class="form__input-wrapper">
                 <div class="form__info-wrapper">
                   <label for="name">Имя:</label>
@@ -117,9 +120,9 @@
 
           <fieldset class="form__tel">
             <div class="form__fieldset-wrapper">
-              <legend>Тел</legend>
+              <legend><span class="form__legend">Тел</span></legend>
               <input type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" required>
-              <svg class="form__input-svg form__input-svg--email" width="25" height="24">
+              <svg class="form__input-svg form__input-svg--tel" width="25" height="24">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </div>
@@ -127,9 +130,9 @@
 
           <fieldset class="form__email">
             <div class="form__fieldset-wrapper">
-              <legend>E-mail</legend>
+              <legend><span class="form__legend">E-mail</span></legend>
               <input type="email" name="email" id="email" placeholder="Ваш Email*" required>
-              <svg class="form__input-svg form__input-svg--email" width="32" height="21">
+              <svg class="form__input-svg form__input-svg--email" width="32" height="32">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
             </div>
@@ -137,7 +140,7 @@
 
           <fieldset class="form__textarea">
             <div class="form__fieldset-wrapper">
-              <legend>Доп</legend>
+              <legend><span class="form__legend">Доп</span></legend>
               <textarea id="textarea-filed" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
           </fieldset>
@@ -154,7 +157,7 @@
     </main>
 
     <footer class="footer container">
-      <a class="footer__logo">
+      <a class="footer__logo" href="index.html">
         <svg width="102" height="34" aria-label="Интернет-магазин «Мишка»">
           <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
         </svg>
@@ -189,5 +192,7 @@
         </svg>
       </a>
     </footer>
+
+    <script src="js/menu.min.js" ></script>
   </body>
 </html>
